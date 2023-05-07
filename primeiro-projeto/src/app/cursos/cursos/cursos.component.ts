@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cursos',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class CursosComponent {
 
+  nomePortal: string;
+
+  cursos: string[] = ['Java', 'Ext JS', 'Angular'];
+
+  constructor() {
+    this.nomePortal = 'http://loiane.training';
+  }
 }
