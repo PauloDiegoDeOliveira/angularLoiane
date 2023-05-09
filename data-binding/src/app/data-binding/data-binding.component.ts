@@ -14,6 +14,11 @@ export class DataBindingComponent {
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
+  nome: string = 'abc';
+  pessoa: any = {
+    nome: 'Paulo',
+    idade: 30
+  };
 
   getValor() {
     return 1;

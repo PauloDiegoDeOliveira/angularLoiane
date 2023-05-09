@@ -74,4 +74,22 @@
             </div>
         </article>
     </section>
+
+    <section class="two-way-binding">
+        <article>
+            <h3>Two-way-binding</h3>
+            <div>
+                <p>Você digitou o: {{ nome }}</p>
+                <input type="text" [(ngModel)]="nome">
+            </div>
+
+            <br>
+
+            <div>
+                <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.</p>
+                <input type="text" [(ngModel)]="pessoa.nome">
+                <input type="text" [(ngModel)]="pessoa.idade">
+            </div>
+        </article>
+    </section>
 </section>
