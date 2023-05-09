@@ -9,8 +9,8 @@
 
     <article>
         <h3>Property Binding</h3>
-        <!-- <img src={{ urlImagem }}> -->
-        <!-- <img bind-src="urlImagem"> -->
+        <img src="{{ urlImagem }}">
+        <img bind-src="urlImagem">
         <img [src]="urlImagem">
     </article>
 
@@ -47,7 +47,7 @@
             </div>
 
             <div class="alert alert-danger" role="alert"
-                [style.display]="classe.value == 'alert-danger' ? 'block' : 'nome'">
+                [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
                 Esse texto somente aparece em caso de erro.
             </div>
         </div>
