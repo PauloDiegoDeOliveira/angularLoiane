@@ -20,6 +20,7 @@ export class DataBindingComponent {
     idade: 30
   };
   nomeDoCurso: string = 'Angular';
+  valorInicial: number = 15;
 
   getValor() {
     return 1;
@@ -45,5 +46,9 @@ export class DataBindingComponent {
 
   onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onMudouValor(evento: any) {
+    console.log('Evento:', evento.novoValor);
   }
 }
